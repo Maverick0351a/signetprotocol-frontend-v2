@@ -1,0 +1,2 @@
+If you see this file in the built output (viewable in Vercel repo tree for commit), Vercel is using a commit at or after 2025-08-29.
+Current intent: force a new deployment so old stale commit 5c45a47 is no longer used.
