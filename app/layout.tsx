@@ -13,23 +13,23 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="border-b border-white/10">
           <div className="container flex items-center py-4">
-            <Link href="/" className="flex items-center mr-8">
-              <img 
-                src="/logo.png" 
-                alt="Signet Protocol" 
-                className="h-12 w-auto rounded opacity-90 hover:opacity-100 transition-opacity duration-200" 
+            <Link href="/" className="flex items-center mr-10">
+              <img
+                src="/logo.png"
+                alt="Signet Protocol"
+                className="h-36 w-auto rounded opacity-90 hover:opacity-100 transition-opacity duration-200 max-h-[144px]"
                 style={{ backgroundColor: 'transparent' }}
               />
             </Link>
-            <nav className="flex items-center gap-5 text-sm text-white/80">
-              <Link href={"/compliance" as Route}>Compliance</Link>
-              <Link href={"/playground" as Route}>Playground</Link>
-              <Link href={"/receipts" as Route}>Receipts</Link>
-              <Link href={"/research" as Route}>Research</Link>
-              <Link href={"/roi" as Route}>ROI</Link>
-              <Link href={"/status" as Route}>Status</Link>
-              <Link href={"/sdks" as Route}>SDKs</Link>
-              <Link href={"/docs" as Route}>Docs</Link>
+            <nav className="flex items-center gap-2 text-sm">
+              <Link className="nav-btn" href={"/compliance" as Route}>Compliance</Link>
+              <Link className="nav-btn" href={"/playground" as Route}>Playground</Link>
+              <Link className="nav-btn" href={"/receipts" as Route}>Receipts</Link>
+              <Link className="nav-btn" href={"/research" as Route}>Research</Link>
+              <Link className="nav-btn" href={"/roi" as Route}>ROI</Link>
+              <Link className="nav-btn" href={"/status" as Route}>Status</Link>
+              <Link className="nav-btn" href={"/sdks" as Route}>SDKs</Link>
+              <Link className="nav-btn" href={"/docs" as Route}>Docs</Link>
             </nav>
           </div>
         </header>

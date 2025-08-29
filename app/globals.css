@@ -72,3 +72,8 @@ html, body {
 .bg-gradient-radial {
   background: radial-gradient(ellipse at top, var(--tw-gradient-stops));
 }
+
+/* Navigation button style */
+.nav-btn {
+  @apply px-4 py-2 rounded-md hover:bg-white/10 text-white/80 hover:text-white transition-colors duration-150 font-medium;
+}
