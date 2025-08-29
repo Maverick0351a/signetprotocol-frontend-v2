@@ -32,6 +32,8 @@ Open http://localhost:3000
 3. Set env vars in Vercel Project Settings
 4. Deploy
 
+Current deployment note: experimental `typedRoutes` is temporarily disabled in `next.config.js` until Vercel confirms all route segments; re-enable once stable.
+
 ## Notes on Compliance features
 - **Compliance** page hits new endpoints (`/v1/compliance/dossier`, `/v1/compliance/dashboard`)
 - **Receipts** viewer displays adherence/RTL metadata when present
