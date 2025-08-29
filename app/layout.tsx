@@ -1,5 +1,6 @@
 import './globals.css'
 import Link from 'next/link'
+import type { Route } from 'next'
 
 export const metadata = {
   title: 'Signet Protocol — Trust Fabric for AI-to-AI',
@@ -21,14 +22,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               />
             </Link>
             <nav className="flex items-center gap-5 text-sm text-white/80">
-              <Link href="/compliance">Compliance</Link>
-              <Link href="/playground">Playground</Link>
-              <Link href="/receipts">Receipts</Link>
-              <Link href="/research">Research</Link>
-              <Link href="/roi">ROI</Link>
-              <Link href="/status">Status</Link>
-              <Link href="/sdks">SDKs</Link>
-              <Link href="/docs">Docs</Link>
+              <Link href={"/compliance" as Route}>Compliance</Link>
+              <Link href={"/playground" as Route}>Playground</Link>
+              <Link href={"/receipts" as Route}>Receipts</Link>
+              <Link href={"/research" as Route}>Research</Link>
+              <Link href={"/roi" as Route}>ROI</Link>
+              <Link href={"/status" as Route}>Status</Link>
+              <Link href={"/sdks" as Route}>SDKs</Link>
+              <Link href={"/docs" as Route}>Docs</Link>
             </nav>
           </div>
         </header>
