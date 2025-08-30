@@ -16,8 +16,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="border-b border-white/10">
           <div className="container flex items-center py-4">
-            <Link href="/" className="flex items-center mr-12 py-2">
-              <span className={`${wordmarkFont.className} brand-wordmark text-4xl md:text-5xl`}>Signet Protocol</span>
+            <Link href="/" className="group flex items-center mr-12 py-3">
+              <span className={`${wordmarkFont.className} brand-wordmark wordmark-glow text-[2.2rem] md:text-[3rem]`}>
+                <span className="wordmark-primary">Signet</span>
+                <span className="wordmark-secondary">Protocol</span>
+              </span>
             </Link>
             <nav className="flex items-center gap-2 text-sm">
               <Link className="nav-btn" href={"/compliance" as Route}>Compliance</Link>
