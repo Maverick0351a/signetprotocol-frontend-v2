@@ -77,3 +77,9 @@ html, body {
 .nav-btn {
   @apply px-4 py-2 rounded-md hover:bg-white/10 text-white/80 hover:text-white transition-colors duration-150 font-medium;
 }
+
+/* Logo styling */
+.logo-img {
+  @apply opacity-90 hover:opacity-100 transition-opacity duration-200 select-none pointer-events-auto;
+  background: transparent !important;
+}
