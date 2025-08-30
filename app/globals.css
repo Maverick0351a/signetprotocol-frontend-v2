@@ -83,3 +83,9 @@ html, body {
   @apply opacity-90 hover:opacity-100 transition-opacity duration-200 select-none pointer-events-auto;
   background: transparent !important;
 }
+
+/* Wordmark styling matching hero 'Verifiable AI' gradient */
+.brand-wordmark {
+  @apply font-bold tracking-tight bg-gradient-to-r from-white via-white to-white/80 bg-clip-text text-transparent select-none;
+  line-height: 1;
+}

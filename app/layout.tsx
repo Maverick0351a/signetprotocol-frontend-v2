@@ -13,12 +13,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <header className="border-b border-white/10">
           <div className="container flex items-center py-4">
-            <Link href="/" className="flex items-center mr-12">
-              <img
-                src="/logo.png"
-                alt="Signet Protocol"
-                className="logo-img h-40 sm:h-56 md:h-64 lg:h-72 w-auto max-h-[18rem]"
-              />
+            <Link href="/" className="flex items-center mr-12 py-2">
+              <span className="brand-wordmark text-5xl md:text-6xl">Siget Protocol</span>
             </Link>
             <nav className="flex items-center gap-2 text-sm">
               <Link className="nav-btn" href={"/compliance" as Route}>Compliance</Link>
