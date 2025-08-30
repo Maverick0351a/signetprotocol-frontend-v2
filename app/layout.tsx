@@ -1,6 +1,9 @@
 import './globals.css'
 import Link from 'next/link'
 import type { Route } from 'next'
+import { Space_Grotesk } from 'next/font/google'
+
+const wordmarkFont = Space_Grotesk({ subsets: ['latin'], weight: ['500','600','700'] })
 
 export const metadata = {
   title: 'Signet Protocol — Trust Fabric for AI-to-AI',
@@ -14,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="border-b border-white/10">
           <div className="container flex items-center py-4">
             <Link href="/" className="flex items-center mr-12 py-2">
-              <span className="brand-wordmark text-5xl md:text-6xl">Siget Protocol</span>
+              <span className={`${wordmarkFont.className} brand-wordmark text-4xl md:text-5xl`}>Signet Protocol</span>
             </Link>
             <nav className="flex items-center gap-2 text-sm">
               <Link className="nav-btn" href={"/compliance" as Route}>Compliance</Link>
